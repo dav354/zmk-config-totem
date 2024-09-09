@@ -20,7 +20,7 @@
     };
 };
 
-/delete-node/ &default_kscan; 
+/delete-node/ &kscan0; 
 
 &xiao_i2c {
     status = "okay";
