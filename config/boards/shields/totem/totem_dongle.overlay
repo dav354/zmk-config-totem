@@ -20,9 +20,6 @@
     };
 };
 
-/delete-node/ &kscan0;  // only required if the dongle uses a 
-                        // different board than the peripherals
-
 &xiao_i2c {
     status = "okay";
     
