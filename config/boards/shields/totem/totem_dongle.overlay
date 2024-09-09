@@ -4,10 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "totem.dtsi"
 
 / {
     chosen {
-        zmk,kscan = &mock_kscan;   
+        zmk,kscan = &mock_kscan;
         zephyr,display = &oled;
     };
 
@@ -19,10 +20,12 @@
     };
 };
 
+/delete-node/ &kscan0;  // only required if the dongle uses a 
+                        // different board than the peripherals
 
 &xiao_i2c {
     status = "okay";
-
+    
     oled: ssd1306@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
