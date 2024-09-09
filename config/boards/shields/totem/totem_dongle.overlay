@@ -18,9 +18,10 @@
         rows = <0>;
         events = <0>;
     };
+
+    /delete-node/ &kscan0; 
 };
 
-/delete-node/ &kscan0; 
 
 &xiao_i2c {
     status = "okay";
