@@ -5,7 +5,8 @@ type: shield
 url: https://github.com/GEIGEIGEIST/TOTEM
 requires: [seeeduino_xiao_ble]
 features:
-  - keys
+   - keys
 siblings:
-  - totem_left
-  - totem_right
+   - totem_left
+   - totem_right
+   - totem_dongle
