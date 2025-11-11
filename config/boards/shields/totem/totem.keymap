@@ -51,6 +51,7 @@
             tapping-term-ms = <240>;
             quick-tap-ms = <150>;
             global-quick-tap;
+            hold-trigger-on-release;
             bindings =
                 <&kp>,
                 <&kp>;

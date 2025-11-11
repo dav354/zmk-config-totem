@@ -63,7 +63,6 @@
             label = "TD_COMMA";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
             bindings = <&kp COMMA>, <&kp SEMI>;
         };
 
@@ -72,7 +71,6 @@
             label = "TD_PERIOD";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
             bindings = <&kp DOT>, <&kp COLON>;
         };
 
@@ -81,7 +79,6 @@
             label = "TD_SLASH";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
             bindings = <&kp FSLH>, <&kp BSLH>;
         };
 
@@ -90,7 +87,6 @@
             label = "TD_PAREN";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            flavor = "tap-preferred";
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
     };
