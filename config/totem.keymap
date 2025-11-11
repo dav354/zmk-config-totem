@@ -57,6 +57,44 @@
         };
     };
 
+    behaviors {
+        td_comma: td_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_COMMA";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+        };
+
+        td_period: td_period {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_PERIOD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp DOT>, <&kp COLON>;
+        };
+
+        td_slash: td_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SLASH";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp FSLH>, <&kp BSLH>;
+        };
+
+        td_paren: td_paren {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_PAREN";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&kp LPAR>, <&kp RPAR>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -79,7 +117,7 @@ label= "BASE"                              ;
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &mt LGUI A  &mt LALT S  &mt LCTRL D &mt LSHFT F &kp G           &kp H       &mt RSHFT J &mt RCTRL K &mt RALT L  &mt RGUI SEMI
-    &kp Q       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+    &kp Q       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &td_comma   &td_period  &td_slash   &td_paren
                                         &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET   &lt SYM ESC   &kp BSPC
                         >;
                 };
